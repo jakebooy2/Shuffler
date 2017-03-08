@@ -12,3 +12,5 @@
 */
 
 Route::get('/', ['uses'=>'PageController@getHome', 'as'=>'home']);
+Route::get('/login', ['uses'=>'PageController@getLogin', 'as'=>'login']);
+Route::get('/register', ['uses'=>'PageController@getRegistration', 'as'=>'register']);

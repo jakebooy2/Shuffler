@@ -6,6 +6,6 @@
 </head>
 <body>
 	@yield('content')
-	<script src="js/bootstrap.css">
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>

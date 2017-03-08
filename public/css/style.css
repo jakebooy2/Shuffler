@@ -1,0 +1,164 @@
+/********************/
+/*  Global Styles   */
+/********************/
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+body{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	border: none;
+	overflow-x: hidden;
+}
+
+/* Navbar */
+a.navbar-brand{
+	font-family: 'Lobster', cursive;
+	font-size: 23px;
+	padding: 0 0 0 0;
+	color: #0074D9 !important;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a.navbar-brand:hover{
+	margin-top: -5px;
+}
+
+.navbar-light{
+	background-color: #222;
+}
+
+.cool-bar{
+	width: 100%;
+	border: 0; 
+  	height: 1px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    background-image: -webkit-linear-gradient(left, #1A1A1A, rgba(0, 116, 217, 0.25), #1A1A1A);
+ 	background-image: -moz-linear-gradient(left, #1A1A1A, rgba(0, 116, 217, 0.25), #1A1A1A);
+  	background-image: -ms-linear-gradient(left, #1A1A1A, rgba(0, 116, 217, 0.25), #1A1A1A);
+  	background-image: -o-linear-gradient(left, #1A1A1A, rgba(0, 116, 217, 0.25), #1A1A1A); 
+}
+
+.cool-bar-2{
+	width: 100%;
+	border: 0; 
+  	height: 1px;
+  	margin-top: -1px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    opacity: 0;
+    background-image: -webkit-linear-gradient(left, rgba(0, 116, 217, 0.25), #1A1A1A, rgba(0, 116, 217, 0.25));
+ 	background-image: -moz-linear-gradient(left, rgba(0, 116, 217, 0.25), #1A1A1A, rgba(0, 116, 217, 0.25));
+  	background-image: -ms-linear-gradient(left, rgba(0, 116, 217, 0.25), #1A1A1A, rgba(0, 116, 217, 0.25));
+  	background-image: -o-linear-gradient(left, rgba(0, 116, 217, 0.25), #1A1A1A, rgba(0, 116, 217, 0.25));
+}
+
+@-webkit-keyframes bar2 {
+    0% {
+    	opacity: 0;
+    }
+    50% {
+    	opacity: 1;
+    }
+    100%{
+    	opacity: 0;
+    }
+} 
+@-webkit-keyframes bar1 {
+    0% {
+    	opacity: 1;
+    }
+    50% {
+    	opacity: 0;
+    }
+    100%{
+    	opacity: 1;
+    }
+} 
+
+.navbar:hover ~ .cool-bar{
+    -webkit-animation: bar1 0.7s; /* Safari 4.0 - 8.0 */
+    animation: bar1 0.7s;
+}
+
+.navbar:hover ~ .cool-bar-2{
+    -webkit-animation: bar2 0.7s; /* Safari 4.0 - 8.0 */
+    animation: bar2 0.7s;
+}
+
+.nav-link{
+	color: #fff !important;
+}
+ 
+a#hover{
+	position: relative;
+	margin-right: 10px;
+}
+
+a#hover:before{
+	content: "";
+  	position: absolute;
+ 	width: 70%;
+  	height: 2px;
+  	margin: auto;
+  	bottom: 5px;
+  	left: 0;
+  	right: 0;
+  	background-color: #0074D9;
+  	visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a#hover:hover:before{
+	visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+a#register{
+	margin-right: 20px;
+}
+
+li.nav-item a.btn-primary{
+	background: transparent;
+	color: #0074D9;
+	border: 2px solid #0074D9;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+li.nav-item a.btn-primary:hover{
+	color: #FFF;
+	background-color: #0074D9;
+}
+
+/* Search Form */
+.mr-sm-2{
+	width: 350px !important;
+	margin-left: 50px;
+	background-color: transparent;
+	border: none;
+	-webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+	border-radius: 0px;
+}
+
+.mr-sm-2:hover{
+	box-shadow: inset 0 -2px 0px #0074D9;
+}
+
+.mr-sm-2:focus{
+	background-color: rgb(40, 40, 40);
+	color: #0074D9;
+	box-shadow: inset 0 -2px 0px #0074D9;
+}
+
+/********************/
+/*    Home Styles   */
+/********************/
+body{
+	background-color: #1A1A1A;
+}

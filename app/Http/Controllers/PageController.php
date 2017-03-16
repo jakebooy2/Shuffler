@@ -2,6 +2,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use Redirect;
 
 class PageController extends Controller{
     
@@ -9,19 +11,15 @@ class PageController extends Controller{
     	return view('home');
     }
 
-    public function getLogin(Request $request){
-    	if($request->session()->has('logged_in')){
-    		getHome();
-    	}else{
-    		return view('login');
-    	}
+    public function logout(){
+    	Auth::logout();
+    	return Redirect::to('/');
     }
 
-    public function getRegistration(Request $request){
-    	if($request->session()->has('logged_in')){
-    		getHome();
-    	}else{
-    		return view('register');
-    	}
+    public function getAccount(){
+    	if(Auth::guest()){
+    		return Redirect::to('/login');
+    	}else return view('account');
     }
+    
 }

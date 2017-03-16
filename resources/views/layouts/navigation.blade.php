@@ -22,7 +22,7 @@
             <li class="nav-item"><center><a class="nav-link" id="hover" href="/login">LOGIN</a></center></li>
             <li class="nav-item"><a class="btn btn-primary" id="register" href="/register">REGISTER</a></li> 
         @else
-            <li class="nav-item"><a class="nav-link" id="hover" href="/account"><b>{{ Auth::user()->name }}</b></a></li>
+            <li class="nav-item"><img class="avatar" src="{{ Auth::user()->getAvatar() }}"><a class="nav-link" id="hover" href="/account"><b>{{ Auth::user()->name }}</b></a></li>
             <li class="nav-item"><a class="nav-link" id="hover" href="/logout">LOGOUT</a></li> 
         @endif
     </ul>

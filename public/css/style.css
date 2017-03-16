@@ -167,7 +167,7 @@ body{
   border-top: 5px solid #0074D9;
   border-bottom: 5px solid #0074D9;
   width: 400px;
-  height: 550px;
+  height: 600px;
   padding: 30px 0 0 0;
   background-color: #222;
   -webkit-box-shadow: 0px 0px 15px -5px rgb(10, 10, 10, 1);
@@ -197,7 +197,7 @@ p.ip{
 }
 
 /* FORM */
-#email-label{
+#email-label, #pass-label, #name-label{
   width: 100%;
   text-align: left;
   color: #0074D9;
@@ -205,15 +205,7 @@ p.ip{
   margin-bottom: 0px;
 }
 
-#pass-label{
-  width: 100%;
-  text-align: left;
-  color: #0074D9;
-  margin-left: 40px;
-  margin-bottom: 0px;
-}
-
-#email, #password{
+#email, #password, #username{
   width: 80%;
   color: #0074D9;
   background-color: #333;
@@ -225,18 +217,17 @@ p.ip{
   margin-bottom: 20px;
 }
 
-#email:focus, #email:active, #password:focus, #email:active{
+#email:focus, #email:active, #password:focus, #email:active, #username:active, #username:focus{
   outline: 0;
   border: 2px solid #0074D9;
 }
 
 
-label#remember{
-  color: #0074D9;
-  margin-top: -5px;
-  margin-bottom: 10px;
+#register-btn{
+  margin-left: 115px;
+  display: block;
+  margin-right: auto;
 }
-
 
 .error{
   color: #FF4136;

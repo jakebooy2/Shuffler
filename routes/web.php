@@ -12,3 +12,8 @@
 */
 
 Route::get('/', ['uses'=>'PageController@getHome', 'as'=>'home']);
+Route::get('/home', ['uses'=>'PageController@getHome', 'as'=>'home']);
+Auth::routes();
+
+Route::get('/logout', ['uses' => 'PageController@logout', 'as'=>'logout']);
+Route::get('/account', ['uses'=>'PageController@getAccount', 'as'=>'account']);
